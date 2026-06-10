@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-m2@f=bi-e775c(uu0qhf19+2i$!^z*yro$+e)1taj&hwq&zc(4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+        "127.0.0.1",
+    "localhost",
+    "booth-northern-phoenix-jelsoft.trycloudflare.com",
+]
 
 
 # Application definition
@@ -43,6 +47,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
+    "github_integration",
 ]
 
 MIDDLEWARE = [
